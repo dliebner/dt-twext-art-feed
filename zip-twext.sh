@@ -14,7 +14,7 @@ if [ -d "$BASEDIR" ]; then
     # Change to BASEDIR, zip the contents directly to the final location
     (
         cd "$BASEDIR"
-        zip -r "$CURRENT_DIR/$ZIPFILE" .
+        zip -FSr "$CURRENT_DIR/$ZIPFILE" .
     )
     echo "Directory $BASEDIR has been zipped to $CURRENT_DIR/$ZIPFILE"
 else

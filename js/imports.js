@@ -14,7 +14,7 @@ import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 
 import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
-setBasePath('shoelace');
+setBasePath('https://domo.town/shoelace');
 
 export {
 	preactSignals,
