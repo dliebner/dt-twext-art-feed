@@ -4506,7 +4506,7 @@ if( !portl.loaded ) {
 						// "Connect to DomoTown"
 
 						const openedWindow = this.openedLoginWindow = window.open(
-							'https://domo.town/twext/login.php?origin=' + encodeURIComponent(window.origin),
+							PATH_TO_WEB_ROOT + 'twext/login.php?origin=' + encodeURIComponent(window.origin),
 							'DtTwextLoginWindow',
 							'width=380,height=600,location=yes,menubar=no,toolbar=no,status=no,resizable=no,scrollbars=yes'
 						);
@@ -4595,7 +4595,7 @@ if( !portl.loaded ) {
 			_handleConfirmAccountDisconnectClick( e ) {
 
 				// Request account disconnect
-				PortalUtils.ajax('https://domo.town/twext/ajax/disconnectTwitchExtensionUser.php', {
+				PortalUtils.ajax(PATH_TO_WEB_ROOT + 'twext/ajax/disconnectTwitchExtensionUser.php', {
 					data: { twitchAuth },
 					success: () => {
 
@@ -4910,7 +4910,7 @@ if( !portl.loaded ) {
 					await twitchAuthorized;
 
 					// Get connected user info
-					PortalUtils.ajax('https://domo.town/twext/ajax/getTwitchBroadcasterDtUser.php', {
+					PortalUtils.ajax(PATH_TO_WEB_ROOT + 'twext/ajax/getTwitchBroadcasterDtUser.php', {
 						data: { twitchAuth },
 						success: (response) => {
 
