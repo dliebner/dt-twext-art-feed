@@ -4808,7 +4808,7 @@ if( !portl.loaded ) {
 								<b class="font-bold">@${connectedUser?.username}</b>&rsquo;s Art Feed
 							</div>
 						</a>
-						<dt-panel-portal .userId=${connectedUser.id} class="overflow-scroll overflow-x-hidden grow"></dt-panel-portal>
+						<dt-panel-portal .userId=${connectedUser.id} class="overflow-y-auto overflow-x-hidden grow"></dt-panel-portal>
 					`;
 
 				}
