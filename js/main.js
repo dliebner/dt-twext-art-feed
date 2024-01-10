@@ -4652,7 +4652,7 @@ if( !portl.loaded ) {
 							</div>
 							<div class="mt-10">
 								<h2 class="text-xl font-semibold mb-3">Extension Preview</h2>
-								<dt-twext-panel class="block overflow-hidden border border-zinc-200 dark:border-zinc-800" style="max-height: 500px; width: 320px;"></dt-twext-panel>
+								<dt-twext-panel class="block overflow-hidden border border-zinc-200 dark:border-zinc-800" style="height: 500px; width: 320px;"></dt-twext-panel>
 							</div>
 						</form>
 						${this.confirmDisconnectRequired ? html`
