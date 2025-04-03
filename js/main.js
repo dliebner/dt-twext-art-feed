@@ -3108,10 +3108,13 @@ if( !portl.loaded ) {
 			/** @param {Object[]} arrItemData */
 			addItemsFromData( arrItemData ) {
 
-				this.itemData = [...this.itemData, ...arrItemData];
+				// only include posts with media
+				const filteredItems = arrItemData.filter(obj => obj.postItems?.length);
+
+				this.itemData = [...this.itemData, ...filteredItems];
 
 				return this.addItems(
-					arrItemData.map(itemData => PortalItem.createItem( itemData ))
+					filteredItems.map(itemData => PortalItem.createItem( itemData ))
 				);
 
 			}
